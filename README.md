@@ -33,7 +33,7 @@ a2.Falar();
 ```
 ______________________________________________________________________________________________________________
 ## 4. Qual a diferença entre private, protected e public em Typescript? Dê um exemplo para cada um.
-
+[Resposta](https://github.com/GuilhermeAlves99/TestePraticoPasquali/tree/master/Resposta4)
 ______________________________________________________________________________________________________________
 ## 7. Explique como funciona o ciclo de vida de um componente angular. Qual método é ideal para fazer uma chamada HTTP?
 ```typescript
