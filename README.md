@@ -32,4 +32,16 @@ a2.Falar();
 //O retorno de a1 será "Latido" e o retorno de a2 será "Animal faz som", pois apenas a classe Cachorro sobrescreve o valor de Falar()
 ```
 ______________________________________________________________________________________________________________
-## 4. Qual a diferença entre private, protected e public em Typescript? Dê um exemplo para cada um
+## 4. Qual a diferença entre private, protected e public em Typescript? Dê um exemplo para cada um.
+
+______________________________________________________________________________________________________________
+## 7. Explique como funciona o ciclo de vida de um componente angular. Qual método é ideal para fazer uma chamada HTTP?
+```typescript
+//O ciclo de vida de um componente em angular é gerenciado por métodos (hooks)
+//Os principais hooks são:
+//1. ngOnInit(): método de inicialização, ideal para chamadas http, seu ciclo de vida se encerra após a inicialização.
+//2. ngOnChanges(): chamado quando propriedades de entrada (@Input) mudam. Seu ciclo de vida é atualizado a cada interação com um input.
+//3. ngDoCheck(): fica a cargo de detectar mudanças no template. Seu ciclo de vida é renovado quando há mudanças na tela.
+//4. ngAfterViewInit(): executado após a renderização da view. Seu ciclo de vida se encerra quando a View é carregada
+//5. ngOnDestroy(): executado antes um elemento ser destruido, serve para limpeza de dados. 
+
