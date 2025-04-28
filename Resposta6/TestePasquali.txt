@@ -1,0 +1,5 @@
+SELECT *
+FROM Pessoas
+WHERE estado = 'SP'
+AND idade BETWEEN 25 AND 40
+ORDER BY nome;
