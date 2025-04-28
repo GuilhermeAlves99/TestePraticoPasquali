@@ -43,5 +43,25 @@ ________________________________________________________________________________
 //2. ngOnChanges(): chamado quando propriedades de entrada (@Input) mudam. Seu ciclo de vida é atualizado a cada interação com um input.
 //3. ngDoCheck(): fica a cargo de detectar mudanças no template. Seu ciclo de vida é renovado quando há mudanças na tela.
 //4. ngAfterViewInit(): executado após a renderização da view. Seu ciclo de vida se encerra quando a View é carregada
-//5. ngOnDestroy(): executado antes um elemento ser destruido, serve para limpeza de dados. 
+//5. ngOnDestroy(): executado antes um elemento ser destruido, serve para limpeza de dados.
+```
+______________________________________________________________________________________________________________
 
+## 8. Analise o trecho abaixo: 
+```typescript
+this.http.get('api/pessoas').subscribe(data => {  
+    this.pessoas = data;  
+});  
+
+console.log(this.pessoas);
+```
+
+O código a cima tem um erro de assincronia, o console log está tentando buscar o valor de this.pessoas em um tempo de execussão onde ela não é mais acessível.
+
+Correção:
+```typescript
+this.http.get('api/pessoas').subscribe(data => {  
+    this.pessoas = data;  
+    console.log(this.pessoas);
+});
+```
