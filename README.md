@@ -35,6 +35,8 @@ ________________________________________________________________________________
 ## 4. Qual a diferença entre private, protected e public em Typescript? Dê um exemplo para cada um.
 [Resposta](https://github.com/GuilhermeAlves99/TestePraticoPasquali/tree/master/Resposta4)
 ______________________________________________________________________________________________________________
+## 6. Considere a tabela Pessoas com os campos(CPF, Nome, Genero, Endereço, Idade, Municipio, Estado). Escreva uma query SQL para buscar todas as pessoas do estado de SP com idade entre 25 e 40 anos, ordenadas pelo nome.
+______________________________________________________________________________________________________________
 ## 7. Explique como funciona o ciclo de vida de um componente angular. Qual método é ideal para fazer uma chamada HTTP?
 ```typescript
 //O ciclo de vida de um componente em angular é gerenciado por métodos (hooks)
@@ -56,7 +58,7 @@ this.http.get('api/pessoas').subscribe(data => {
 console.log(this.pessoas);
 ```
 
-O código a cima tem um erro de assincronia, o console log está tentando buscar o valor de this.pessoas em um tempo de execussão onde ela não é mais acessível.
+O código acima tem um erro de assincronia, o console log está tentando buscar o valor de this.pessoas em um tempo de execussão onde ela não é mais acessível.
 
 Correção:
 ```typescript
